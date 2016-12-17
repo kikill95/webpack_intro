@@ -14,12 +14,12 @@ const config = {
         loaders: [
             {
                 test: /\.scss$/,
-                loader: ExtractTextPlugin.extract('style', 'css!postcss!sass'),
+                loader: ExtractTextPlugin.extract('style', 'css!postcss!sass')
             },
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
-                exclude: 'node_nodules',
+                exclude: 'node_modules',
                 query: {
                     presets: ['es2015']
                 }
@@ -31,12 +31,12 @@ const config = {
         new webpack.optimize.UglifyJsPlugin({
             compress: {
                 // suppresses warnings, usually from module minification
-                warnings: false,
-            },
+                warnings: false
+            }
         }),
         new ExtractTextPlugin('styles.css')
     ],
-    devtool: 'source-map',
+    devtool: 'source-map'
 };
 
 module.exports = config;
