@@ -3,7 +3,7 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const config = {
-    entry: [path.join(__dirname, '/js/main.js')],
+    entry: ['babel-polyfill', path.join(__dirname, '/js/main.js')],
     output: {
         path: __dirname + '/build',
         publicPath: '/build',
@@ -21,7 +21,8 @@ const config = {
                 loader: 'babel-loader',
                 exclude: 'node_modules',
                 query: {
-                    presets: ['es2015']
+                    presets: ['es2015'],
+                    plugins: ['syntax-async-functions', 'transform-regenerator']
                 }
             }
         ]
