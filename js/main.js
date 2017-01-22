@@ -1,3 +1,4 @@
+// imports
 import first from './first/first';
 import second from './second/second';
 
@@ -5,11 +6,9 @@ import second from './second/second';
 import '../scss/main.scss';
 
 window.addEventListener('load', () => {
-    let test = () => {
-        console.log('main');
-    };
-    test();
-    
     first();
-    second();
+    // console.log(first.anotherProperty);
+
+    let petty = new second('Myha');
+    // petty.myName();
 }, false);

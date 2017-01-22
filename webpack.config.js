@@ -14,7 +14,7 @@ const config = {
         loaders: [
             {
                 test: /\.scss$/,
-                loader: ExtractTextPlugin.extract('style', 'css!postcss!sass')
+                loader: ExtractTextPlugin.extract('style', 'css!sass')
             },
             {
                 test: /\.js$/,
