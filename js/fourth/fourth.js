@@ -22,6 +22,6 @@ export default function() {
 
     async function read() {
         var result = await getRandomPonyFooArticle();
-        console.log(result);
+        // console.log(result);
     }
 }
