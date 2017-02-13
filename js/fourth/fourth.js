@@ -8,7 +8,7 @@ export default function() {
     // promises. Example: https://github.com/kikill95/nodejs-servers/blob/master/express/index.html
     function getRandomPonyFooArticle() {
       return new Promise((resolve, reject) => {
-        $.get('https://111crossorigin.me/https://google.com', (res, status) => {
+        $.get('https://crossorigin.me/https://google.com', (res, status) => {
           resolve(status);
         }).catch(err => {
           if (err) {
