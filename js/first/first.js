@@ -2,10 +2,12 @@
 import $ from 'jquery';
 
 // exports
+// module.exports - this is NodeJS way!
 module.exports = function() {
     // console.log('first');
     // console.log($('h1'));
 };
+// module.exports.<smth> - this is NodeJS way!
 module.exports.anotherProperty = 'Exported property';
 
 // block-scoped varialbes

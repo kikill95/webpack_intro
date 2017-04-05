@@ -1,3 +1,4 @@
+// module.exports - this is NodeJS way!
 module.exports = () => {
   // generators
   function* idMaker(){
